@@ -29,7 +29,6 @@ jobs:
 
       - uses: EndBug/add-and-commit@v9
         with:
-          add: "dist"
           message: "chore: update dist build [skip ci]"
           committer_name: GitHub Actions
           committer_email: actions@github.com
