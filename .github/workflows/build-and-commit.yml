@@ -34,5 +34,3 @@ jobs:
           git add dist/
           git diff --cached --quiet || git commit -m "chore: update dist build [skip ci]"
           git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
