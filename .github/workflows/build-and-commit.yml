@@ -29,8 +29,8 @@ jobs:
 
       - name: Commit and push dist files
         run: |
-          git config --global user.email "account-service@agendapro.com"
-          git config --global user.name "account-service"
+          git config user.name "GitHub Actions"
+          git config user.email noreply@github.com
           git add dist/
           git diff --cached --quiet || git commit -m "chore: update dist build [skip ci]"
           git push
