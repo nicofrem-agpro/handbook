@@ -1,0 +1,3 @@
+*               @dev1 @dev2
+/app/models     @dev1 @dev2 @dev3
+/lib            @dev1 @dev4

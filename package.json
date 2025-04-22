@@ -1,0 +1,20 @@
+{
+  "name": "handbook",
+  "version": "1.0.0",
+  "description": "Handbook de AgendaPro",
+  "scripts": {
+    "build": "node script/generate-handbook.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agendapro/handbook.git"
+  },
+  "keywords": [
+    "Handbook"
+  ],
+  "author": "AgendaPro",
+  "bugs": {
+    "url": "https://github.com/agendapro/handbook/issues"
+  },
+  "homepage": "https://github.com/agendapro/handbook#readme"
+}

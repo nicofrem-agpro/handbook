@@ -1,0 +1,47 @@
+name: Pull Request Tests Check
+on:
+  pull_request:
+    branches: [ main ]
+  push:
+    branches: [ main ]
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+env:
+  AP_GITHUB_TOKEN: ${{secrets.AP_GITHUB_TOKEN}}
+  NODE_VERSION: 18
+jobs:
+  test_jest:
+    name: Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: '0'
+      - uses: actions/setup-node@v4
+        with:
+           node-version: ${{ env.NODE_VERSION }}
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+      - run: pnpm install
+      - run: pnpm test:coverage
+      - name: SonarQube Scan
+        uses: sonarsource/sonarqube-scan-action@master
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+        with:
+          args: >
+            -Dsonar.projectKey=${{ github.event.repository.name }}
+            -Dsonar.projectVersion=${{ github.sha }}
+            -Dsonar.coverage.exclusions=**/*.test.*,**/*.spec.*
+            -Dsonar.cpd.exclusions=**/*.test.*,**/*.spec.*,**/config/**
+            -Dsonar.javascript.lcov.reportPaths=./coverage/lcov.info
+      - name: SonarQube Quality Gate
+        uses: sonarsource/sonarqube-quality-gate-action@master
+        timeout-minutes: 5
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
