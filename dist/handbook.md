@@ -1,5 +1,4 @@
-Archivo: architecture/design/apis.md
-
+# apis
 [Handbook](/readme.md) » [Architecture](/architecture/readme.md) » [Design](/architecture/design/readme.md) » API
 
 # API
@@ -38,16 +37,13 @@ Archivo: architecture/design/apis.md
   - Implementar autenticación y autorización para asegurar la comunicación.
   - Usar canales para organizar y gestionar las conexiones WebSocket.
 
-Archivo: architecture/design/common-challenges/readme.md
-
+# readme
 [Handbook](/readme.md) » [Architecture](/architecture/readme.md) » [Design](/architecture/design/readme.md) » Common Technical Challenges & Solutions
 
 # Common Technical Challenges & Solutions
 
 
-Archivo: architecture/design/hexagonal.md
-
-[Handbook](/readme.md) » [Architecture](/architecture/readme.md) » [Design](/architecture/design/readme.md) » Hexagonal
+# hexagonal
 
 # Arquitectura Hexagonal #
 
@@ -353,9 +349,7 @@ En la estructura del proyecto, todos los archivos de configuración necesarios p
 - Centralización: Al tener todos los archivos de configuración en la raíz, se facilita el acceso a ellos y su modificación.
 - Separación clara: Las configuraciones de herramientas y entorno se mantienen separadas del código fuente (src/), evitando mezclar configuraciones con la lógica de la aplicación.
 - Simplicidad: Facilita la integración de nuevas herramientas o cambios en las existentes, ya que todos los ajustes necesarios están en un solo lugar.
-Archivo: architecture/design/microservices.md
-
-[Handbook](/readme.md) » [Architecture](/architecture/readme.md) » [Design](/architecture/design/readme.md) » Microservices
+# microservices
 
 # Microservices
 
@@ -466,13 +460,11 @@ monolíticas tradicionales.
 Cada tipo de servicio tiene un propósito específico en la arquitectura de microservicios. La elección del tipo de servicio dependerá de los requisitos funcionales, no funcionales y de las necesidades específicas de tu aplicación. Es común que una arquitectura de microservicios madura incluya una combinación de estos tipos de servicios para lograr un sistema completo y eficiente.
 
 Recuerda, la decisión entre microservicios y agregar características a proyectos existentes no es binaria. A menudo, la mejor solución es un enfoque híbrido que evoluciona con el tiempo. Siempre considera las necesidades específicas de tu proyecto, las capacidades de tu equipo y los objetivos a largo plazo de la organización al tomar estas decisiones arquitectónicas.
-Archivo: architecture/design/readme.md
-
+# readme
 [Handbook](/readme.md) » [Architecture](/architecture/readme.md) » Design
 
 # Design
-Archivo: architecture/readme.md
-
+# readme
 [Handbook](/readme.md) » Architecture
 
 # Architecture
@@ -510,8 +502,7 @@ y capaces de soportar los desafíos del mundo real.
       - [Standalone](/architecture/stack/frontend/react/standalone.md)
   - [Database](/architecture/stack/database/readme.md)
 
-Archivo: architecture/stack/backend/express.md
-
+# express
 [Handbook](/readme.md) » [Architecture](/architecture/readme.md) » [Technology Stack](/architecture/stack/readme.md) » [Backend](/architecture/stack/backend/readme.md) » Express.js
 
 # Express #
@@ -607,9 +598,7 @@ Referirse a [API](/architecture/design/apis.md) para obtener información de cu�
 - **Settings JSON:** Se utiliza un archivo settings.json para centralizar configuraciones no sensibles que definen el comportamiento de la aplicación en función del entorno (por ejemplo, URLs, timeouts, flags, etc.).
 
 -	**Settings JS:** El archivo settings.js debe importar el JSON y exportar una configuración enriquecida, resolviendo valores dinámicos según el entorno actual (NODE_ENV). Este archivo actúa como punto único de acceso a las variables de configuración del proyecto.
-Archivo: architecture/stack/backend/java.md
-
-[Handbook](/readme.md) » [Architecture](/architecture/readme.md) » [Technology Stack](/architecture/stack/readme.md) » [Backend](/architecture/stack/backend/readme.md) » Java
+# java
 
 # Java
 
@@ -701,8 +690,7 @@ Referirse a [API](/architecture/design/apis.md) para obtener información de cu�
 ### 7.3 **Test Data Management**
 - **Test Containers**: Utilizar Testcontainers para proporcionar bases de datos y servicios reales durante las pruebas.
 - **Data Builders**: Implementar el patrón Builder para crear datos de prueba flexibles y reutilizables.
-Archivo: architecture/stack/backend/readme.md
-
+# readme
 [Handbook](/readme.md) » [Architecture](/architecture/readme.md) » [Technology Stack](/architecture/stack/readme.md) » Backend
 
 # Backend
@@ -773,8 +761,7 @@ en la calidad del código y en la dificultad de mantenimiento.
 
 Recuerda, estas son pautas generales. Cada proyecto puede tener requisitos únicos que pueden influir en la elección de la tecnología. Siempre evalúa caso por caso y no dudes en consultar con el equipo de arquitectura si tienes dudas.
 
-Archivo: architecture/stack/backend/ruby-on-rails.md
-
+# ruby-on-rails
 [Handbook](/readme.md) » [Architecture](/architecture/readme.md) » [Technology Stack](/architecture/stack/readme.md) » [Backend](/architecture/stack/backend/readme.md) » Ruby on Rails
 
 # Ruby on Rails
@@ -879,9 +866,7 @@ Referirse a [API](/architecture/design/apis.md) para obtener información de cu�
 
 ### 8.1 **Settings**
 - **Settings**: Utilizamos la gema `settings` para manejar variables de configuración de manera centralizada y consistente. Esta proporciona un único punto de acceso a valores definidos por entorno a lo largo del proyecto.
-Archivo: architecture/stack/database.md
-
-[Handbook](/readme.md) » [Architecture](/architecture/readme.md) » [Technology Stack](/architecture/stack/readme.md) » Database
+# database
 
 # Database
 
@@ -901,9 +886,7 @@ Redis es una base de datos en memoria de código abierto. Es altamente escalable
 
 Elasticsearch es una base de datos de búsqueda y análisis de código abierto. Es altamente escalable y se utiliza comúnmente para almacenar grandes volúmenes de datos en los cuales se requiere hacer acciones de búsqueda y análisis.
 
-Archivo: architecture/stack/frontend/react/nextjs.md
-
-[Handbook](/readme.md) » [Architecture](/architecture/readme.md) » [Technology Stack](/architecture/stack/readme.md) » [Frontend](/architecture/stack/frontend/readme.md) » [ReactJS](/architecture/stack/frontend/react/readme.md) » NextJS
+# nextjs
 
 # NextJS
 
@@ -941,8 +924,7 @@ Archivo: architecture/stack/frontend/react/nextjs.md
 - **Custom Server**: Permite configurar un servidor personalizado si se necesita más control sobre el proceso de servidor.
 
 Recuerda que NextJS es especialmente beneficioso para proyectos que requieren un alto rendimiento, buen SEO y una experiencia de desarrollo fluida. Sin embargo, puede tener una curva de aprendizaje inicial para desarrolladores que no están familiarizados con sus conceptos específicos.
-Archivo: architecture/stack/frontend/react/readme.md
-
+# readme
 [Handbook](/readme.md) » [Architecture](/architecture/readme.md) » [Technology Stack](/architecture/stack/readme.md) » [Frontend](/architecture/stack/frontend/readme.md) » ReactJS
 
 # ReactJS
@@ -1047,9 +1029,7 @@ Este documento proporciona directrices para diseñar y estructurar aplicaciones 
 
 Recuerda, estas son pautas generales para nuestros proyectos ReactJS. Cada proyecto puede tener requisitos únicos que pueden requerir ajustes en estas prácticas. Siempre consulta con el equipo de arquitectura si tienes dudas o necesitas hacer modificaciones significativas a estas directrices.
 
-Archivo: architecture/stack/frontend/react/single-spa.md
-
-[Handbook](/readme.md) » [Architecture](/architecture/readme.md) » [Technology Stack](/architecture/stack/readme.md) » [Frontend](/architecture/stack/frontend/readme.md) » [ReactJS](/architecture/stack/frontend/react/readme.md) » Single-SPA
+# single-spa
 
 # Single-SPA
 
@@ -1088,8 +1068,7 @@ Archivo: architecture/stack/frontend/react/single-spa.md
 - **Integración**: Requiere estrategias adicionales para pruebas de integración entre micro-frontends.
 
 Single-SPA es ideal para aplicaciones grandes y complejas que requieren flexibilidad y escalabilidad. Sin embargo, introduce una complejidad adicional en términos de configuración y coordinación entre equipos, por lo que es importante evaluar si los beneficios superan los costos para tu proyecto específico.
-Archivo: architecture/stack/frontend/react/standalone.md
-
+# standalone
 [Handbook](/readme.md) » [Architecture](/architecture/readme.md) » [Technology Stack](/architecture/stack/readme.md) » [Frontend](/architecture/stack/frontend/readme.md) » [ReactJS](/architecture/stack/frontend/react/readme.md) » Standalone React
 
 # Standalone React
@@ -1133,8 +1112,7 @@ Archivo: architecture/stack/frontend/react/standalone.md
 - **Soluciones**: Requiere implementar soluciones adicionales (como react-helmet) para mejorar el SEO.
 
 Standalone React es ideal para proyectos pequeños a medianos, prototipos rápidos, o cuando se necesita un control total sobre la configuración del proyecto. Sin embargo, requiere más trabajo inicial de configuración y puede no ser la mejor opción para proyectos que necesitan SEO avanzado o renderizado del lado del servidor sin configuración adicional.
-Archivo: architecture/stack/frontend/readme.md
-
+# readme
 [Handbook](/readme.md) » [Architecture](/architecture/readme.md) » [Technology Stack](/architecture/stack/readme.md) » Frontend
 
 # Frontend
@@ -1213,8 +1191,7 @@ En la siguiente sección, se presentan las consideraciones para cada una de las 
 7. **Consult with the architecture team**: Para decisiones importantes sobre la elección de tecnología, siempre es recomendable consultar con el equipo de arquitectura para asegurar la alineación con la estrategia tecnológica de la empresa.
 
 Recuerda, estas son pautas generales. Cada proyecto puede tener requisitos únicos que pueden influir en la elección de la tecnología. Siempre evalúa caso por caso y no dudes en consultar con el equipo de arquitectura si tienes dudas.
-Archivo: architecture/stack/readme.md
-
+# readme
 [Handbook](/readme.md) » [Architecture](/architecture/readme.md) » Technology Stack
 
 # Technology Stack
@@ -1267,9 +1244,7 @@ En estos casos, es importante que se justifique adecuadamente la elección de di
 con el equipo de arquitectura y tecnología para asegurar que la implementación sea coherente con los estándares y
 las prácticas de la organización.
 
-Archivo: architecture/standarizations/configuration-standards/environments.md
-
-[Handbook](/readme.md) » [Architecture](/architecture/readme.md) » [Standarizations](/architecture/standarizations/readme.md) » [Configuration standards](/architecture/standarizations/configuration-standards/readme.md) » Environments
+# environments
 
 ## Variables de Entorno vs. Secretos: Definición y Buenas Prácticas
 
@@ -1294,8 +1269,7 @@ Los secretos son credenciales sensibles que nunca deben almacenarse en el contro
 -	Tokens de autenticación
 
 Los secretos deben gestionarse mediante un sistema seguro de manejo de secretos, en nuestro caso [Vault](/devops/security/readme.md).
-Archivo: architecture/standarizations/configuration-standards/readme.md
-
+# readme
 [Handbook](/readme.md) » [Architecture](/architecture/readme.md) » [Standarizations](/architecture/standarizations/readme.md) » [Configuration standards](/architecture/standarizations/configuration-standards/readme.md)
 
 # Configuration standards
@@ -1308,9 +1282,7 @@ El objetivo principal es establecer una forma unificada de definir, estructurar 
 
 - [Environments](/architecture/standarizations/configuration-standards/environments.md)
 
-Archivo: architecture/standarizations/message-guidelines/kafka.md
-
-[Handbook](/readme.md) » [Architecture](/architecture/readme.md) » [Standarizations](/architecture/standarizations/readme.md) » [Message Guidelines](/architecture/standarizations/message-guidelines/readme.md) » Kafka
+# kafka
 
 ## Reglas Generales
 1. No incluir `métodos` en los mensajes para evitar lógica en el payload y reducir inconsistencias.
@@ -1356,8 +1328,7 @@ Para evitar excesiva carga en los mensajes de Kafka, la data adicional debe obte
 2.	Replicar la data mediante eventos de los modelos
 	-	Para evitar consultas adicionales, los micro servicios puede subscribirse a los respectivos eventos de los modelos que necesitan sincronizarse.
 	-	Ejemplo: Cuando un usuario cambia su dirección, se emite un evento con la nueva dirección en lugar de consultarla en cada mensaje.
-Archivo: architecture/standarizations/message-guidelines/readme.md
-
+# readme
 [Handbook](/readme.md) » [Architecture](/architecture/readme.md) » [Standarizations](/architecture/standarizations/readme.md) » [Message Guidelines](/architecture/standarizations/message-guidelines/readme.md)
 
 # Message Guidelines
@@ -1368,9 +1339,7 @@ Esta sección define las reglas y mejores prácticas para estructurar los mensaj
 
 - [Kafka](/architecture/standarizations/message-guidelines/kafka.md)
 
-Archivo: architecture/standarizations/naming-conventions/microservices.md
-
-[Handbook](/readme.md) » [Architecture](/architecture/readme.md) » [Naming Conventions](/architecture/standarizations/naming-conventions/readme.md) » Microservices
+# microservices
 
 # Microservices
 
@@ -1381,8 +1350,7 @@ aspecto crítico que a menudo requiere una consideración cuidadosa para garanti
 y mantenibilidad.
 
 WIP
-Archivo: architecture/standarizations/naming-conventions/readme.md
-
+# readme
 [Handbook](/readme.md) » [Architecture](/architecture/readme.md) » [Standarizations](/architecture/standarizations/readme.md) » Naming Conventions
 
 # Naming Conventions
@@ -1398,9 +1366,7 @@ pueden trabajar de manera más efectiva y colaborativa.
 - [Microservices](/architecture/standarizations/naming-conventions/microservices.md)
 - [Kafka Topics](/architecture/standarizations/naming-conventions/topics.md)
 
-Archivo: architecture/standarizations/naming-conventions/topics.md
-
-[Handbook](/readme.md) » [Architecture](/architecture/readme.md) » [Naming Conventions](/architecture/standarizations/naming-conventions/readme.md) » Topics
+# topics
 
 # Topics
 
@@ -1498,8 +1464,7 @@ REMINDER_SETTINGS_UPDATE # good
 Muchas veces es difícil encontrar el nombre correcto para un tópico, si necesitas ayuda o sugerencias no dudes en 
 preguntar a tu líder técnico o a algún miembro del equipo de arquitectura.
 
-Archivo: architecture/standarizations/readme.md
-
+# readme
 [Handbook](/readme.md) » [Architecture](/architecture/readme.md) » Standardizations
 
 # Standardizations
@@ -1512,8 +1477,7 @@ Archivo: architecture/standarizations/readme.md
 
 ## [Configuration Standards](/architecture/standarizations/configuration-standards/readme.md)
 
-Archivo: architecture/standarizations/repository-configurations/readme.md
-
+# readme
 [Handbook](/readme.md) » [Architecture](/architecture/readme.md) » [Standardizations](/architecture/standarizations/readme.md) » Repository Configurations and Required Workflows
 
 # Repository Configurations and Required Workflows
@@ -1543,8 +1507,7 @@ Además de los workflows requeridos, se pueden correr los siguientes workflows:
 - `.github/workflows/dependencies.yml`: En este workflow ([Ejemplo](/architecture/standarizations/repository-configurations/templates/dependencies.yml)) se deben correr los chequeos de dependencias vulneradas y se deben actualizar las dependencias vulneradas.
 - `.github/workflows/e2e.yml`: En este workflow ([Ejemplo](/architecture/standarizations/repository-configurations/templates/e2e.yml)) se deben correr los tests end-to-end que definan los encargados del proyecto.
 
-Archivo: devops/dev-tools/accesoconsolarails.md
-
+# accesoconsolarails
 ## Requisitos
 
 - [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
@@ -1755,9 +1718,7 @@ Es necesario instalar [Lens](https://k8slens.dev/) o [OpenLens](https://github.c
 ```bash
 bundle exec rails c
 
-Archivo: devops/dev-tools/backstage.md
-
-[Handbook](/readme.md) » [Devops](/devops/readme.md) » [Dev Tools](/devops/dev-tools/readme.md) » Backstage
+# backstage
 
 # Backstage
 
@@ -2027,8 +1988,7 @@ El script de sincronización de los scorecards se ejecutará todos los días a l
 - Una vez aprobado el pase a producción, el equipo DevOps notificará por correo electrónico la finalización del proceso.
 
 
-Archivo: devops/dev-tools/cli/readme.md
-
+# readme
 # Proceso de Automatización con CLI en Agendapro
 
 Dentro de Agendapro, contamos con un CLI diseñado para agilizar nuestros procesos diarios y optimizar tareas repetitivas. Este CLI nos permite realizar diversas acciones clave en el desarrollo y mantenimiento de nuestros proyectos, garantizando estándares consistentes en configuración, monitoreo y despliegue.
@@ -2092,8 +2052,7 @@ Automatizamos las configuraciones necesarias para que el equipo pueda centrarse 
 
 
 Este enfoque nos permite mantener procesos eficientes, seguros y alineados con las mejores prácticas en el desarrollo y operación de software dentro de Agendapro.
-Archivo: devops/dev-tools/cli/repos.md
-
+# repos
 # Creación de Repositorios
 
 En Agendapro, utilizamos repositorios **template** en GitHub para estandarizar la estructura de nuestros proyectos y asegurar que todos los nuevos desarrollos incluyan la lógica e integraciones adquiridas como mejores prácticas de nuestros despliegues.
@@ -2125,8 +2084,7 @@ github-token <token>          # Establecer el token de GitHub
 ```
 Con esta configuración, aseguramos un acceso seguro y controlado a los repositorios template, permitiendo que los nuevos proyectos sigan las mejores prácticas establecidas en Agendapro.
 
-Archivo: devops/dev-tools/cli/topics.md
-
+# topics
 ## 2. Consulta de Tópicos en MSK (QA, Staging y Producción)
 
 Nuestro CLI permite consultar información clave sobre los **tópicos en MSK** (Managed Streaming for Kafka) en los distintos entornos. A continuación, se detallan los comandos disponibles:
@@ -2157,8 +2115,7 @@ Si no sabes cómo hacerlo o no tienes la VPN activa, puedes solicitar acceso en 
 Con estos comandos, garantizamos una gestión eficiente y organizada de los tópicos en nuestros entornos de desarrollo. 🚀
 
 
-Archivo: devops/dev-tools/cli/vault.md
-
+# vault
 ## 3. Creación de Secretos en Vault
 
 En Agendapro utilizamos la suite de **HashiCorp Vault**, la cual nos permite almacenar secretos de forma segura y además funciona como un **Configuration Manager**, permitiendo gestionar variables de entorno según el ambiente (**Staging, QA y Producción**).
@@ -2190,8 +2147,7 @@ Para eliminar una ruta en Vault, es necesario realizar una solicitud al área de
 📌 #solicitudes-devops
 
 Esto garantiza un control adecuado sobre los secretos y evita eliminaciones accidentales que puedan afectar despliegues en producción.
-Archivo: devops/dev-tools/guia-workflow-soporte.md
-
+# guia-workflow-soporte
 **Gestión de Incidentes en Slack**
 
 La implementación de este flujo en Slack tiene como objetivo agilizar la gestión de incidentes, permitiendo a los equipos reportar, actualizar y hacer seguimiento de problemas de manera centralizada.
@@ -2252,18 +2208,15 @@ Cuando se necesita actualizar el estado o detalles de un incidente existente.
 Se intenta ingresar una combinación de ID y estado que ya fue registrada.
 - Estado duplicado: Si se intenta actualizar un incidente con el mismo estado ya registrado, el sistema rechazará la actualización con el mensaje 🚨 "Estado ya registrado" 🚨.
 
-Archivo: devops/dev-tools/monitoring.md
-
+# monitoring
 [Handbook](/readme.md) » [Devops](/devops/readme.md) » [Dev Tools](/devops/dev-tools/readme.md) » Monitoring & Observability
 
 # Monitoring & Observability
-Archivo: devops/dev-tools/readme.md
-
+# readme
 [Handbook](/readme.md) » [Devops](/devops/readme.md) » Dev Tools
 
 # Dev Tools
-Archivo: devops/infrastructure/DRP/readme.md
-
+# readme
 # Procedimiento Operativo: Cambio de DNS para API en Cloudflare y AWS API Gateway
 
 ## Propósito
@@ -2358,8 +2311,7 @@ Este procedimiento es aprobado y supervisado por el líder del DRP y el equipo D
 ## Fecha de Vigencia
 04 diciembre 2024
 
-Archivo: devops/infrastructure/data/readme.md
-
+# readme
 # Procedimiento Operativo: Solicitud de Replicación de Tablas de Base de Datos Mediante AWS DMS
 
 ## Propósito
@@ -2441,13 +2393,10 @@ Este procedimiento es aprobado y supervisado por el líder del departamento DevO
 ## Fecha de Vigencia
 2024-12-04
 
-Archivo: devops/infrastructure/diagrams.md
-
-[Handbook](/readme.md) » [Devops](/devops/readme.md) » [Infrastructure](/devops/infrastructure/readme.md) » Diagrams
+# diagrams
 
 # Diagrams
-Archivo: devops/infrastructure/monitoring/CloudWatch/readme.md
-
+# readme
 # Monitoreo en AWS con CloudWatch
 
 ## Descripción General
@@ -2499,8 +2448,7 @@ Para dudas o sugerencias sobre el monitoreo en CloudWatch, contacta al equipo de
 ---
 
 
-Archivo: devops/infrastructure/monitoring/Custom/sidekiq.md
-
+# sidekiq
 # Monitoreo Customizado de Colas de Sidekiq en AgendaPro
 
 En AgendaPro, implementamos un monitoreo customizado para gestionar el rendimiento y estado de las colas de Sidekiq. Esta solución nos permite verificar el encolamiento y procesamiento de trabajos en tiempo real, y asegurar que todos los jobs finalicen correctamente antes de detener Sidekiq en Kubernetes.
@@ -2542,8 +2490,7 @@ graph TD
 | ------- | ----------- | ------------------------------------ | ------------------------- |
 | 1.0     | 11-11-2024  | Configuración inicial para Elastic APM en Ruby. |Yonathan Duran |
 ------------------------------------------------------------------------------------------
-Archivo: devops/infrastructure/monitoring/ELK/configure-node.md
-
+# configure-node
 # Configuración de Node.js para enviar datos APM a ELK
 
 ## 1. Instalación del paquete `elastic-apm-node`
@@ -2582,8 +2529,7 @@ Una vez que tu aplicación esté en funcionamiento, los datos APM deberían ser 
 | Versión | Fecha       | Descripción                          |Author|
 | ------- | ----------- | ------------------------------------ |--------------------|
 | 1.0     | 11-11-2024  | Configuración inicial para Elastic APM en Nodejs. |Yonathan Duran|
-Archivo: devops/infrastructure/monitoring/ELK/configure-ruby.md
-
+# configure-ruby
 # Configuración de la Gema para Elastic APM en Ruby
 
 Este archivo detalla cómo configurar la gema de Elastic APM en una aplicación Ruby para enviar datos de rendimiento a nuestros servidores de APM en **Kibana**. Esta configuración cubre tanto el entorno de **producción** como el de **desarrollo**.
@@ -2651,8 +2597,7 @@ end
 | ------- | ----------- | ------------------------------------ |--------------------|
 | 1.0     | 11-11-2024  | Configuración inicial para Elastic APM en Ruby. |Yonathan Duran|
 
-Archivo: devops/infrastructure/monitoring/ELK/readme.md
-
+# readme
 # Monitoreo de Logs y Rendimiento con ELK
 
 ## Descripción General
@@ -2738,8 +2683,7 @@ El uso de ELK para monitorear logs y rendimiento aporta múltiples ventajas a nu
 | ------- | ----------- | ------------------------------------ |---------------------------------- |
 | 1.0     | 11-11-2024  | Versión inicial de la documentación. | Yonathan Duran|
 
-Archivo: devops/infrastructure/monitoring/NewRelic/readme.md
-
+# readme
 # Monitoreo de Aplicaciones con New Relic en AgendaPro
 
 En AgendaPro, utilizamos **New Relic** como herramienta de monitoreo de aplicaciones (APM) para supervisar el rendimiento y la estabilidad de nuestras aplicaciones en tiempo real. New Relic nos ayuda a identificar cuellos de botella, errores, problemas de rendimiento y a mejorar la experiencia del usuario final.
@@ -2825,8 +2769,7 @@ Para más información, consulta la documentación oficial de New Relic, donde e
 
 
 
-Archivo: devops/infrastructure/monitoring/Sentry/readme.md
-
+# readme
 # Monitoreo APM con Sentry en AgendaPro
 
 En AgendaPro, utilizamos **Sentry** como herramienta para el monitoreo de aplicaciones APM (Application Performance Monitoring). Sentry nos permite detectar, analizar y solucionar problemas de rendimiento de manera eficiente en nuestras aplicaciones, proporcionando información detallada sobre las transacciones y errores que ocurren en tiempo real.
@@ -2911,8 +2854,7 @@ Para cualquier duda o problema durante la configuración, contacta al equipo de 
 | Versión | Fecha       | Descripción                          |Author|
 | ------- | ----------- | ------------------------------------ |--------------------|
 | 1.0     | 11-11-2024  | Configuración inicial para Elastic APM en Ruby. |Yonathan Duran|
-Archivo: devops/infrastructure/monitoring/readme.md
-
+# readme
 # Herramientas de Monitoreo y Observabilidad
 
 ## Descripción General
@@ -2974,8 +2916,7 @@ Esta documentación proporciona guías sobre la configuración, buenas práctica
 | ------- | ----------- | ------------------------------------ |--------------------------|
 | 1.0     | 11-11-2024  | Versión inicial de la documentación. |          Yonathan Duran  |
 
-Archivo: devops/infrastructure/provisioning/create-database.md
-
+# create-database
 [Handbook](/readme.md) » [DevOps](/devops/readme.md) » [Infrastructure](/devops/infrastructure/readme.md) » [Provisioning](/devops/infrastructure/provisioning/readme.md) » Create Database
 
 # How to create a database
@@ -3007,8 +2948,7 @@ Este documento explica cómo crear una base de datos a través del workflow "Cre
 ## Notas: 
 - Los nombres de la base de datos y del login deberán respetar las convenciones recomendadas por PostgreSQL para nombres de identificadores. Deben comenzar con una letra o guion bajo, y pueden contener letras, números y guiones bajos.
 
-Archivo: devops/infrastructure/provisioning/create-topic.md
-
+# create-topic
 [Handbook](/readme.md) » [DevOps](/devops/readme.md) » [Infrastructure](/devops/infrastructure/readme.md) » [Provisioning](/devops/infrastructure/provisioning/readme.md) » Create Topic
 
 # How to create a topic
@@ -3065,8 +3005,7 @@ por ejemplo:
 >}
 >```
 
-Archivo: devops/infrastructure/provisioning/readme.md
-
+# readme
 [Handbook](/readme.md) » [Devops](/devops/readme.md) » [Infrastructure](/devops/infrastructure/readme.md) » Provisioning
 
 # Provisioning
@@ -3077,8 +3016,7 @@ En esta sección se encuentran las guías que te ayudarán a realizar tareas esp
 
 - [How to create a topic](/devops/infrastructure/provisioning/create-topic.md)
 - [How to create a database](/devops/infrastructure/provisioning/create-database.md)
-Archivo: devops/infrastructure/readme.md
-
+# readme
 [Handbook](/readme.md) » [DevOps](/devops/readme.md) » Infrastructure
 
 # Infrastructure
@@ -3092,8 +3030,7 @@ La infraestructura de software comprende todos los componentes fundamentales y s
 - [Monitoring](/devops/infrastructure/monitoring/readme.md)
 - [Provisioning](/devops/infrastructure/provisioning/readme.md)
 
-Archivo: devops/readme.md
-
+# readme
 [Handbook](/readme.md) » Devops
 
 # Devops
@@ -3113,8 +3050,7 @@ eficiente y colaborativa en nuestros proyectos.
   - [Monitoring & Observability](/devops/dev-tools/monitoring.md)
 - [Security](/devops/security/readme.md)
 
-Archivo: devops/security/authentication.md
-
+# authentication
 <p align="left">
   <img src="img/hv.png" alt="HashiCorp Vault Logo" height="60"/>
 </p>
@@ -3189,8 +3125,7 @@ jobs:
           secrets: |
             secret/data/dev/app/config API_KEY | APP_API_KEY
 
-Archivo: devops/security/readme.md
-
+# readme
 <p align="left">
   <img src="img/hv.png" alt="HashiCorp Vault Logo" height="60"/>
 </p>
@@ -3225,8 +3160,7 @@ La información contenida acá está dirigida a:
 
 Para cualquier sugerencia o mejora, abrí un PR o escribinos directamente en el canal de `#devops`.
 
-Archivo: devops/security/structure.md
-
+# structure
 <p align="left">
   <img src="img/hv.png" alt="HashiCorp Vault Logo" height="60"/>
 </p>
@@ -3268,8 +3202,7 @@ Esto les permitirá:
 Los desarrolladores **no tendrán visibilidad ni acceso a la carpeta `production/`**.  
 El entorno productivo está restringido exclusivamente a personas designadas con permisos específicos, con el fin de proteger datos sensibles y evitar accesos no autorizados.
 
-Archivo: engineering/branch-work-standard/readme.md
-
+# readme
 [Handbook](/readme.md) » [Engineering](/engineering/readme.md) » [Branch Work Standard](/engineering/branch-work-standard/readme.md) » Branch Work Standard
 
 ## **Ramas y ambientes de desarrollo (back y front)**
@@ -3305,8 +3238,7 @@ Para comenzar y trabajar una funcionalidad:
 - `git checkout -b hotfix/PRO-XX/*` (`XX` es el ID de tu tarjeta en [Basecamp](https://3.basecamp.com/5590595/projects) al feature y `*` describe el hotfix en inglés y con _underscore_ para separación de palabras).
 - Cuando se termina (testeado y validado), se debe hacer un **pull request** a `main` con la descripción del hotfix (esta etapa puede requerir no esperar la corrida de los tests)
 
-Archivo: engineering/career-development/career-development.md
-
+# career-development
 [Handbook](/readme.md) » [Engineering](/engineering/readme.md) » [Career Development](/engineering/career-development/career-development.md) » Engineering Ladders
 
 # Plan de Carrera para el Equipo de TI
@@ -3451,8 +3383,7 @@ Senior Developer +
 
 PD: todos los cargos constan de 3 niveles internos (Low, Mid, High), es decir, por ejemplo: El Senior Developer puede estar en Senior Low, Senior Mid o Senior High
 
-Archivo: engineering/career-development/performance-reviews.md
-
+# performance-reviews
 [Handbook](/readme.md) » [Engineering](/engineering/readme.md) » [Career Development](/engineering/career-development/readme.md) » Performance Reviews
 
 # Performance Reviews
@@ -3529,28 +3460,23 @@ En un entorno tecnológico, donde la innovación y la colaboración son clave, l
 
 **Importancia:** En un entorno como lo es el mundo de la programación, estar capacitado es esencial para el crecimiento profesional y ser un aporte al equipo que se pertenezca.
 
-Archivo: engineering/career-development/readme.md
-
+# readme
 [Handbook](/readme.md) » [Engineering](/engineering/readme.md) » Career Development
 
 # Career Development
-Archivo: engineering/engineering-loops/code-reviews.md
-
+# code-reviews
 [Handbook](/readme.md) » [Engineering](/engineering/readme.md) » [Engineering Loops](/engineering/engineering-loops/readme.md) » Code Reviews
 
 # Code Reviews
-Archivo: engineering/engineering-loops/planning.md
-
+# planning
 [Handbook](/readme.md) » [Engineering](/engineering/readme.md) » [Engineering Loops](/engineering/engineering-loops/readme.md) » Planning & Design
 
 # Planning & Design
-Archivo: engineering/engineering-loops/qa-testing.md
-
+# qa-testing
 [Handbook](/readme.md) » [Engineering](/engineering/readme.md) » [Engineering Loops](/engineering/engineering-loops/readme.md) » QA & Testing
 
 # QA & Testing
-Archivo: engineering/engineering-loops/readme.md
-
+# readme
 [Handbook](/readme.md) » [Engineering](/engineering/readme.md) » Engineering Loops
 
 # Engineering Loops
@@ -3583,13 +3509,11 @@ Archivo: engineering/engineering-loops/readme.md
     - **Revisión Post-Despliegue**: Evaluación del proceso de desarrollo y despliegue para identificar áreas de mejora.
     - **Planificación para el Próximo Ciclo**: Ajustes y planificación para el próximo ciclo de desarrollo basados en los aprendizajes del ciclo anterior.
 
-Archivo: engineering/engineering-loops/release.md
-
+# release
 [Handbook](/readme.md) » [Engineering](/engineering/readme.md) » [Engineering Loops](/engineering/engineering-loops/readme.md) » Release & Maintenance
 
 # Release & Maintenance
-Archivo: engineering/onboarding/readme.md
-
+# readme
 [Handbook](/readme.md) » [Engineering](/engineering/readme.md) » [Onboarding](/engineering/onboarding/readme.md) » Onboarding
 
 # Onboarding
@@ -3627,8 +3551,7 @@ Archivo: engineering/onboarding/readme.md
    3. Informasayuno mensual (quedará automáticamente invitado ya que está en un grupo, pero igual verificar)
 6. **Asistir a capacitación AgendaPro**. Cerciórate de que el nuevo dev esté invitado a una o dos reuniones de Customer Success con Onboarding con clientes reales. (puedes solicitarlo en Slack).
 
-Archivo: engineering/readme.md
-
+# readme
 [Handbook](/readme.md) » Engineering
 
 # Engineering
@@ -3653,46 +3576,33 @@ Archivo: engineering/readme.md
     - [BizOps](/engineering/teams/tech-enablement/bizops.md)
     - [DevOps](/engineering/teams/tech-enablement/devops.md)
 
-Archivo: engineering/teams/agendapro-payments/propay.md
-
-[Handbook](/readme.md) » [Engineering](/engineering/readme.md) » [Teams](/engineering/teams/readme.md) » [AgendaPro Payments](/engineering/teams/agendapro-payments/readme.md) » ProPay
-
-# ProPay
-Archivo: engineering/teams/agendapro-payments/psp.md
-
-[Handbook](/readme.md) » [Engineering](/engineering/readme.md) » [Teams](/engineering/teams/readme.md) » [AgendaPro Payments](/engineering/teams/agendapro-payments/readme.md) » PSP
-
-# PSP
-Archivo: engineering/teams/agendapro-payments/readme.md
-
-[Handbook](/readme.md) » [Engineering](/engineering/readme.md) » [Teams](/engineering/teams/readme.md) » AgendaPro Payments
-
-# AgendaPro Payments
-Archivo: engineering/teams/agendapro/apio.md
-
-[Handbook](/readme.md) » [Engineering](/engineering/readme.md) » [Teams](/engineering/teams/readme.md) » [AgendaPro](/engineering/teams/agendapro/readme.md) » Apio
+# apio
 
 # Apio
-Archivo: engineering/teams/agendapro/core-agenda.md
-
+# core-agenda
 [Handbook](/readme.md) » [Engineering](/engineering/readme.md) » [Teams](/engineering/teams/readme.md) » [AgendaPro](/engineering/teams/agendapro/readme.md) » Core Agenda
 
 # Core Agenda
-Archivo: engineering/teams/agendapro/growth.md
-
-[Handbook](/readme.md) » [Engineering](/engineering/readme.md) » [Teams](/engineering/teams/readme.md) » [AgendaPro](/engineering/teams/agendapro/readme.md) » Growth
+# growth
 
 # Growth
-Archivo: engineering/teams/agendapro/mobile.md
+# mobile
 
-[Handbook](/readme.md) » [Engineering](/engineering/readme.md) » [Teams](/engineering/teams/readme.md) » [AgendaPro](/engineering/teams/agendapro/readme.md) » Mobile
-Archivo: engineering/teams/agendapro/readme.md
-
+# readme
 [Handbook](/readme.md) » [Engineering](/engineering/readme.md) » [Teams](/engineering/teams/readme.md) » AgendaPro
 
 # AgendaPro
-Archivo: engineering/teams/readme.md
+# propay
 
+# ProPay
+# psp
+
+# PSP
+# readme
+[Handbook](/readme.md) » [Engineering](/engineering/readme.md) » [Teams](/engineering/teams/readme.md) » AgendaPro Payments
+
+# AgendaPro Payments
+# readme
 [Handbook](/readme.md) » [Engineering](/engineering/readme.md) » Teams
 
 # Teams
@@ -3774,28 +3684,20 @@ El VP de Producto es el líder del equipo de producto de la empresa. Es responsa
 - Colaborar con los PMs para priorizar las características y definir el roadmap del producto.
 - Rastrear métricas de alto nivel y el rendimiento del producto para tomar decisiones estratégicas.
 
-Archivo: engineering/teams/tech/architecture.md
-
-[Handbook](/readme.md) » [Engineering](/engineering/readme.md) » [Teams](/engineering/teams/readme.md) » [Tech Enablement](/engineering/teams/tech/readme.md) » Architecture
+# architecture
 
 # Architecture
-Archivo: engineering/teams/tech/bizops.md
-
-[Handbook](/readme.md) » [Engineering](/engineering/readme.md) » [Teams](/engineering/teams/readme.md) » [Tech Enablement](/engineering/teams/tech/readme.md) » BizOps
+# bizops
 
 # BizOps
-Archivo: engineering/teams/tech/devops.md
-
-[Handbook](/readme.md) » [Engineering](/engineering/readme.md) » [Teams](/engineering/teams/readme.md) » [Tech Enablement](/engineering/teams/tech/readme.md) » DevOps
+# devops
 
 # DevOps
-Archivo: engineering/teams/tech/readme.md
-
+# readme
 [Handbook](/readme.md) » [Engineering](/engineering/readme.md) » [Teams](/engineering/teams/readme.md) » Tech Enablement
 
 # Tech Enablement
-Archivo: readme.md
-
+# readme
 # Handbook
 
 ## Introduction

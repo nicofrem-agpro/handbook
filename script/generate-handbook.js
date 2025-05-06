@@ -35,7 +35,7 @@ const getAllFiles = (dir, fileList = []) => {
     if (stat.isDirectory()) {
       getAllFiles(fullPath, fileList);
     } else if (file.endsWith(".md")) {
-      fileList.push(fullPath);
+      fileList.push({ filePath: fullPath, file: file.replace(".md", "") });
     }
   });
 
@@ -50,11 +50,18 @@ const generateMergedMarkdown = () => {
   const files = getAllFiles(ROOT_DIR).sort();
   let output = "";
 
-  files.forEach((filePath) => {
-    const relativePath = path.relative(ROOT_DIR, filePath);
-    const content = fs.readFileSync(filePath, "utf8");
+  files.forEach(({ filePath, file }) => {
+    const content = fs.readFileSync(filePath, {
+      encoding: "utf8",
+    });
 
-    output += `Archivo: ${relativePath}\n\n${content}\n`;
+    const lines = content.split("\n");
+
+    if (lines[0].toLowerCase()?.endsWith?.(`» ${file.toLowerCase()}`)) {
+      lines.shift();
+    }
+
+    output += `# ${file}\n${lines.join("\n")}\n`;
   });
 
   fs.writeFileSync(OUTPUT_FILE, output);
